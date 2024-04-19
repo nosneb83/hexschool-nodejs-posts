@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "946da40e-db93-43c3-a317-750c6802176b",
+		"name": "posts - Render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34159507"
+	},
+	"item": [
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-nodejs-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"hexschool-nodejs-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Benson Li\",\r\n    \"content\": \"Test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hexschool-nodejs-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"hexschool-nodejs-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-nodejs-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"hexschool-nodejs-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a single post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Benson Li\",\r\n    \"content\": \"Test2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hexschool-nodejs-posts.onrender.com/posts/662257a1648f567e12a6e517",
+					"protocol": "https",
+					"host": [
+						"hexschool-nodejs-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"662257a1648f567e12a6e517"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a single post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-nodejs-posts.onrender.com/posts/66226fc5971d38967904d3be",
+					"protocol": "https",
+					"host": [
+						"hexschool-nodejs-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"66226fc5971d38967904d3be"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
